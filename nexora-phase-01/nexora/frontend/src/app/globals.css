@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* Preliminary Nexora brand tokens. The full design system comes in a later phase. */
+:root {
+  --nexora-navy: #101b2b;
+  --nexora-teal: #19c5b4;
+  --nexora-cloud: #f4f6f8;
+  --nexora-white: #ffffff;
+
+  --background: var(--nexora-cloud);
+  --foreground: var(--nexora-navy);
+  --card: var(--nexora-white);
+  --card-foreground: var(--nexora-navy);
+  --primary: var(--nexora-navy);
+  --primary-foreground: var(--nexora-white);
+  --accent: var(--nexora-teal);
+  --accent-foreground: var(--nexora-navy);
+  --muted: #e6eaee;
+  --muted-foreground: #5b6675;
+  --border: #dde2e8;
+  --ring: var(--nexora-teal);
+  --radius: 0.625rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --radius-lg: var(--radius);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+  body {
+    background: var(--background);
+    color: var(--foreground);
+  }
+}
