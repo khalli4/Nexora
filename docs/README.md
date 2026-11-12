@@ -1,4 +1,7 @@
 # Nexora documentation
 
-Project documentation lives here. Phase 01 only establishes the foundation; architecture,
-API and design documents will be added as features are specified.
+Project documentation lives here.
+
+- [Design system](./design-system.md): brand foundation, tokens, typography, materials, motion and component conventions (Phase 02).
+
+Architecture and API documents will be added as features are specified.

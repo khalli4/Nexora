@@ -5,8 +5,8 @@ companies, job seekers and hiring managers. It will include a public marketing w
 recruiter portal, a candidate portal, an administrative portal and AI-powered recruitment
 and candidate intelligence. The web application comes first; mobile apps follow later.
 
-> **Status: Phase 01 (project foundation).** No business features, authentication or
-> database schemas exist yet.
+> **Status: Phase 02 (brand identity and design system).** No business features,
+> authentication or database schemas exist yet.
 
 ## Technology stack
 
@@ -20,7 +20,8 @@ and candidate intelligence. The web application comes first; mobile apps follow 
 
 Additional dependencies beyond the stack: `geist` (self-hosted fonts, so builds do not
 need to reach Google Fonts), `psycopg` (PostgreSQL driver for SQLAlchemy),
-`pydantic-settings` (environment-based settings), plus `pytest`, `httpx` and `ruff` for
+`pydantic-settings` (environment-based settings), Radix UI primitives (accessible
+Dialog, Dropdown Menu, Avatar, Label, Separator, Slot), plus `pytest`, `httpx` and `ruff` for
 development.
 
 ## Folder structure
@@ -87,6 +88,9 @@ cp .env.example .env
 | `npm run build` | Production build |
 | `npm run lint` | ESLint |
 | `npm run typecheck` | TypeScript check |
+| `npm run check:contrast` | Verify WCAG contrast of design tokens (both themes) |
+
+The design system preview is at http://localhost:3000/design-system (see `docs/design-system.md`).
 
 ### Backend (from `backend/`, venv active)
 
